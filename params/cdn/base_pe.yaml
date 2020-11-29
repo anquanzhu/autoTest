@@ -1,0 +1,105 @@
+# http接口测试框架配置信息
+
+
+
+
+#[pe]
+# 生产环境
+tester: chenmq
+environment: product
+versionCode: v1.0
+host: https://console.ctcdn.cn
+sessionHost: https://iam-test.ctcdn.cn/iam/sign/ok
+loginHost: https://vip.ctcdn.cn/iam/gw/auth/Login
+workspaceid: "10002005"
+workOrderHost: http://work-order-test.ctyuncdn.cn
+iamPrivateHost: https://iam-private.ctcdn.cn/iam/gw/auth/Login
+vipAuthHost: https://vip.ctcdn.cn/iam/ctyun/console?workspaceId=10002005&serviceId=10000010&returnUrl=https%3A%2F%2Fconsole.ctcdn.cn%2Fcdn%2Fctyun%2Fself&signature=ca637ddd9c44d622c466c92e557ac644
+loginInfo: {
+  "id": "cmq00002@qq.com",
+  "loginFree": "false",
+  "loginType": "password",
+  "password": "PapmaPSLQbUKWu2XWIIVHw=="
+}
+# iam-private
+iam_loginInfo: {
+  "id": "chenmq",
+  "loginFree": "false",
+  "loginType": "password",
+  "origin": "freeipa",
+  "password": "Sn3qRqwMZwPdtZA0PWJlNw=="
+}
+
+db_info: {
+  host: "36.111.140.79",
+  user: "root",
+  password: "SJKsjk@111111",
+  port: 3306,
+  db: 'cmdb',
+  charset: 'utf8'
+}
+email: 286036139@qq.com
+
+
+# bs 部分，默认使用  周琪 客户
+ctyunAcctId: 0dba69812ab444c4adc90edbf080b210
+bsUserName: "陈孟琪"
+bsHost: http://bs.ctcdn.cn/bs
+bsAuthHost: https://iam-private.ctcdn.cn/iam/ctyun/console?workspaceId=10001684&serviceId=10001661&returnUrl=http%3A%2F%2Fbs.ctcdn.cn&signature=6bec7f6f9e9e7b143dc468a4ba28112d
+
+# ctyun 部分，默认使用周期客户
+ctyunLoginUrl: https://www.ctyun.cn/services/auth/Login?locale=zh-cn
+ctyunHost: https://cdn.ctyun.cn
+ctyun_workspaceid: "10039265"
+
+# 周琪的账号
+ctyun_loginInfo: id=1524926244@qq.com&loginType=password&password=EeltA2Qo%2F4Cd3kTN8oAnPA%3D%3D&loginFree=false
+
+
+
+# headers 部分
+
+headers_json: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                                  Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/json",
+}
+headers_text: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                                  Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "text/plain",
+}
+headers_form: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                      Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/x-www-form-urlencoded",
+}
+
+header_form_wo: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                          Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/x-www-form-urlencoded",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEzfQ.zWkVj5oehTUt9l0_O3i_o1i4wtoo7Aj21j0HWVD95bs"
+}
+
+header_json_wo: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                          Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/json",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEzfQ.zWkVj5oehTUt9l0_O3i_o1i4wtoo7Aj21j0HWVD95bs"
+}
+
+
+# 测试报告路径
+xml_report: "/report/xml"
+html_report: "/report/html"
+# 测试计划id
+planId: 242534
+caseReport: https://36.111.140.76:8443/automatedTest/updateCaseResult
+
+
+# V1 接口的一些基本信息
+# AK/SK 来自osp 对应服务 ---decode（time） ----decode （URL）----
+APP: "262041364663894016"
+APP_SECRET: "03McvYqCS9qhKjNgNm53Uq1ZgoiywGGr7WA45OCDpNU"
+AC: "app"

@@ -1,0 +1,17 @@
+#集成测试环境 Integrated Test Environment ； ITE
+#自动化测试环境 Automated test environment ；ATE
+#生产环境 production environment ； PE
+
+
+active: ""
+
+
+# Allure CDN客户控制台报告相关
+ENV_RANGE: "VIP客户控制台、CTYUN客户控制台、BS客户控制台、客户控制台对外V1接口"
+TEST_TYPE: "接口自动化"
+
+
+SCDN_ENV_RANGE: "VIP安全客户控制台、CTYUN安全客户控制台、安全控制台对外V1接口"
+
+IAM_ENV_RANGE: "IAM后端接口、IAM对外V1接口"
+

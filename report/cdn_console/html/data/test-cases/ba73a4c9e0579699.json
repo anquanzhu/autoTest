@@ -1,0 +1,113 @@
+{
+  "uid" : "ba73a4c9e0579699",
+  "name" : "test_CDN_262374",
+  "fullName" : "testcases.cdn.v1.test_v1_domain.TestDomain#test_CDN_262374",
+  "historyId" : "966824934aee1679ba4fbbd7f40260a1",
+  "time" : {
+    "start" : 1606461354152,
+    "stop" : 1606461367229,
+    "duration" : 13077
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert []",
+  "statusTrace" : "self = <v1.test_v1_domain.TestDomain object at 0x000002423B9800F0>\n\n    @pytest.mark.skipif(Init.ENV == 'PE', reason=\"线上环境无法执行\")\n    @allure.story(\"域名新增-配置成功-域名启用-编辑-配置失败-域名启用\")\n    def test_CDN_262374(self):\n        # 新增域名\n        create_domain_url = self.v1_info[\"createDomain\"]\n        payload = self.createV1Domain.create_domain(self.ctyunacctid, random.choice(productcode))\n        create_domain_response = post_json_head(self.host, create_domain_url, payload)\n        print(create_domain_response.text)\n        print(\"-------------------验证新增域名是否成功-------------------\")\n        print('请求url: ' + str(create_domain_url) + \";\")\n        print(\"请求data: \" + str(payload) + \";\")\n        print(\"返回： \" + str(create_domain_response.text) + \";\")\n        print(\"重点验证：\"  \"  expect： 返回域名名称\")\n        assert \"服务调用成功\" in create_domain_response.text\n        assert payload[\"data\"][\"domain\"] in create_domain_response.text\n        assert create_domain_response.elapsed.total_seconds() < 3\n        # 工单等待时间\n        time.sleep(2)\n    \n        # 调用工单列表接口，查找新增的域名工单，状态为进行中，类型为新增\n        orderlist_url = self.domain_info[\"listOrder\"]\n        self.domain_list.append(payload[\"data\"][\"domain\"])\n        print(self.domain_list)\n        order_payload = self.orderData.order_default_data(self.domain_list)\n        order_list_response = self.session.post(self.host + orderlist_url, json=order_payload, verify=False,\n                                                timeout=10)\n        print(order_list_response.text)\n        content = json.loads(order_list_response.text)\n        orders = content[\"data\"][\"list\"]\n    \n        order = [order for order in orders if order[\"domain\"] == payload[\"data\"][\"domain\"] and\n                 order[\"orderType\"] == \"4\" and order[\"status\"] == \"2\"]\n        if order:\n            print(\"已找到域名为{}的新增工单，工单为：{}\".format(payload[\"data\"][\"domain\"], str(order)))\n        else:\n            print(\"未找到域名为{}的新增工单\".format(payload[\"data\"][\"domain\"]))\n    \n        print(\"-------------------查询 ListOrder 接口-------------------\")\n        print('请求url: ' + orderlist_url)\n        print(\"请求data: \" + str(order_payload))\n        print(\"返回： \" + order_list_response.text)\n        print(\"重点验证：\"  \" expect： 新增域名在工单列表中，且类型为新增，状态为进行中\")\n        assert order\n        assert order_list_response.status_code == 200\n        assert 'core.ok' in order_list_response.text\n        assert order_list_response.elapsed.total_seconds() < 3\n    \n        # 工单系统配置成功\n        deal_new_domain(payload[\"data\"][\"domain\"], \"3\")\n        time.sleep(1)\n    \n        # 调用工单列表接口，查找新增的域名工单，状态为成功，类型为新增\n        order_list_response_2 = self.session.post(self.host + orderlist_url, json=order_payload, verify=False,\n                                                  timeout=10)\n        print(order_list_response_2.text)\n        content_2 = json.loads(order_list_response_2.text)\n        orders_2 = content_2[\"data\"][\"list\"]\n        order_2 = [order for order in orders_2 if order[\"domain\"] == payload[\"data\"][\"domain\"] and\n                   order[\"orderType\"] == \"4\" and order[\"status\"] == \"3\"]\n        if order_2:\n            print(\"已找到域名为{}的新增成功工单，工单为：{}\".format(payload[\"data\"][\"domain\"], str(order_2)))\n        else:\n            print(\"未找到域名为{}的新增成功工单\".format(payload[\"data\"][\"domain\"]))\n        assert order_2\n    \n        # 调用域名列表接口，查找新增成功的域名\n        url = self.domain_info[\"listDomain\"]\n        params = {\n            \"workspaceId\": self.workspaceId,\n            \"page\": 1,\n            \"pageSize\": 1000\n        }\n        domain_list_response = self.session.get(self.host + url, params=params, verify=False, timeout=10)\n        assert payload[\"data\"][\"domain\"] in domain_list_response.text\n        assert \"服务调用成功\" in domain_list_response.text\n    \n        # 编辑域名\n        edit_domain_payload = self.createV1Domain.edit_domain(self.ctyunacctid, payload[\"data\"][\"domain\"],\n                                                              payload[\"data\"][\"productCode\"])\n        edit_domain_response = post_json_head(self.host, create_domain_url, edit_domain_payload)\n        print(edit_domain_response.text)\n        print(\"-------------------验证编辑域名是否成功-------------------\")\n        print('请求url: ' + str(create_domain_url) + \";\")\n        print(\"请求data: \" + str(edit_domain_payload) + \";\")\n        print(\"返回： \" + str(edit_domain_response.text) + \";\")\n        print(\"重点验证：\"  \"  expect： 返回域名名称\")\n        assert \"服务调用成功\" in edit_domain_response.text\n        assert payload[\"data\"][\"domain\"] in edit_domain_response.text\n        time.sleep(1)\n    \n        # 域名列表该域名有在途工单\n        order_list = self.orderData.domain_orderlist()\n        # assert payload[\"data\"][\"domain\"] in str(order_list)\n        print(order_list)\n    \n        # 调用工单列表接口，查找更新的域名工单，状态为进行中，类型为更新\n        order_list_response_3 = self.session.post(self.host + orderlist_url, json=order_payload, verify=False,\n                                                  timeout=10)\n        print(order_list_response_3.text)\n        content_3 = json.loads(order_list_response_3.text)\n        orders_3 = content_3[\"data\"][\"list\"]\n        order_3 = [order for order in orders_3 if order[\"domain\"] == payload[\"data\"][\"domain\"] and\n                   order[\"orderType\"] == \"5\" and order[\"status\"] == \"2\"]\n        if order_3:\n            print(\"已找到域名为{}的更新工单，工单为：{}\".format(payload[\"data\"][\"domain\"], str(order_3)))\n        else:\n            print(\"未找到域名为{}的更新工单\".format(payload[\"data\"][\"domain\"]))\n>       assert order_3\nE       assert []\n\ntestcases\\cdn\\v1\\test_v1_domain.py:427: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461354151,
+      "stop" : 1606461354152,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461323322,
+      "stop" : 1606461324440,
+      "duration" : 1118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461416756,
+      "stop" : 1606461416756,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "客户控制台v1接口域名接口测试"
+  }, {
+    "name" : "story",
+    "value" : "域名新增-配置成功-域名启用-编辑-配置失败-域名启用"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.v1"
+  }, {
+    "name" : "suite",
+    "value" : "test_v1_domain"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDomain"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.v1.test_v1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ba73a4c9e0579699.json",
+  "parameterValues" : [ ]
+}

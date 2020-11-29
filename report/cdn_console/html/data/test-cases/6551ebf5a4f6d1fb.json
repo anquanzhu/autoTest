@@ -1,0 +1,110 @@
+{
+  "uid" : "6551ebf5a4f6d1fb",
+  "name" : "test_CDN_243771",
+  "fullName" : "testcases.cdn.bs_console.test_bs_cert.Test_BS_cert#test_CDN_243771",
+  "historyId" : "acf9214cc0c4efb8d03606f1a88081d8",
+  "time" : {
+    "start" : 1606461194132,
+    "stop" : 1606461197326,
+    "duration" : 3194
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461192876,
+      "stop" : 1606461193237,
+      "duration" : 361
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461194132,
+      "stop" : 1606461194132,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461199008,
+      "stop" : 1606461199008,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "BS 客户控制台-证书模块"
+  }, {
+    "name" : "story",
+    "value" : "创建证书---查询---删除证书"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.bs_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_bs_cert"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_BS_cert"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.bs_console.test_bs_cert"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6551ebf5a4f6d1fb.json",
+  "parameterValues" : [ ]
+}

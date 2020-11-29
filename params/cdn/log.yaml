@@ -1,0 +1,61 @@
+### 请求数和带宽流量 有运营商和地区选择， 其他的没有
+
+
+# 概览页的今日和本月，带宽流量查询
+dataList: /cdn/gw/statisticsanalysis/QueryDataList
+#{"data":{"workspaceId":"10003885","productType":[],"isp":[],"province":[],"domain":["caijuna.baidu.com","Auto-live-968c.ctyun.cn","wwww55555.baidu.com","cm.baidu.com","caijun100.test.com","jcka.test.com","Auto-random-Dce250.ctyun.cn","wwwtest.baidu.com","www.test12222.baidu.com","demo1.ctyun.cn","Auto-random-d3BD.ctyun.cn","Auto-random-40Da.ctyun.cn","Auto-random-f0Ca.ctyun.cn","Auto-random-bEa9.ctyun.cn","Auto-random-bD53.ctyun.cn","Auto-random-a817.ctyun.cn","Auto-random-d1ec.ctyun.cn","Auto-random-6F98.ctyun.cn","Auto-random-8B3E.ctyun.cn","Auto-random-ddddd.ctyun.cn","dfsd.ctyun.cn","tt.ctyun.cn","aa.ctyun.cn","aka.baidu.com","gg.aa.cmqtest.com","test22.cmqtest.com","rr.cmqtest.com","tt.cmqtest.com","cmqtest.cn","*.cmqtest07.com","www.cmqtest07.com","cmqtest.zjer.cn","www.wfq654d.com","test21e.1cui02.com","test21e.car.com","*.dtslb.com","cmq003.ksedu.cn","cmq004.test004.cn","cmq002.ksedu.cn","*.baidu.com"],"startTime":1598976000,"endTime":1599526809}}
+# {"data":{"workspaceId":"10003885","productType":["004","005"],"isp":[1,2,3],"province":[],"domain":["www.test12222.baidu.com","demo1.ctyun.cn"],"startTime":1599494400,"endTime":1599534401}}
+# {"data":{"workspaceId":"10003885","productType":["004","005"],"isp":[1,2,3],"province":["210000","360000"],"domain":["www.test12222.baidu.com","demo1.ctyun.cn"],"startTime":1599494400,"endTime":1599534401}}
+
+# 回源统计
+#  {"data":{"workspaceId":"10003885","productType":["003"],"isp":[],"province":[],"domain":["Auto-random-Dce250.ctyun.cn","tt.cmqtest.com","test21e.1cui02.com"],"startTime":1599408000,"endTime":1599494399}}
+missDataList: /cdn/gw/statisticsanalysis/MissDataList
+
+# 概览页的今日和本月
+productList: /cdn/gw/flowpacket/ProductV3
+
+# workspaceId=10003885&do=c_data
+domainList: /cdn/gw/domain/GetList
+
+# 获取服务商列表 workspaceId=10003885
+isp: /cdn/gw/query/basicinfo/isp
+
+# 获取地区 workspaceId=10003885
+areaList: /cdn/gw/query/basicinfo/ListArea
+
+# 菜单与按钮显示 workspaceId=10003885&domain=cdn.statistics.usage.tab
+#               workspaceId=10003885&domain=cdn.statistics.rank.tab
+menu: /iam/gw/workspace/menu/GetTree
+
+# 请求数
+requestDataList: /cdn/gw/statisticsanalysis/RequestDataList
+
+# 命中率
+hit: /cdn/gw/query/statisticsanalysis/GetHit
+
+# 获取httpcode
+httpcode: /cdn/gw/query/statisticsanalysis/GetHttpCode
+
+# PV/UV
+pvuv: /cdn/gw/statisticsanalysis/GetPvUv
+
+### 用户分析部分的数据
+#  {"data":{"workspaceId":"10003885","productType":["003","004","001"],"domain":["www12345678.baidu.com","caijuna.baidu.com"],"startTime":1599494400,"endTime":1599545214}}
+fbrData: /cdn/gw/statisticsanalysis/ListProvinceFBRData
+
+ispList: /cdn/gw/statisticsanalysis/ListIspFBRData
+
+
+# 热门分析-TOP接口
+
+# 热门URL、热门URL(回源)
+ListTopUri: /cdn/gw/statisticsanalysis/ListTopUri
+
+# 热门Referer
+ListTopReferer: /cdn/gw/statisticsanalysis/ListTopReferer
+
+# 域名排行
+ListTopDomain: /cdn/gw/statisticsanalysis/ListTopDomain
+
+# TOP客户端IP
+ListTopIp: /cdn/gw/statisticsanalysis/ListTopIp

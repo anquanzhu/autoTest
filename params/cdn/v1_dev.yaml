@@ -1,0 +1,16 @@
+# http接口测试框架配置信息
+
+
+# [v1-dev]
+
+host: https://iam-dev.ctcdn.cn
+
+# AK/SK 来自osp 对应服务 ---decode（time） ----decode （URL）----
+APP: "262041364663894016"
+APP_SECRET: "03McvYqCS9qhKjNgNm53Uq1ZgoiywGGr7WA45OCDpNU"
+AC: "app"
+
+# 天翼云账号，来自iam_user-[陈孟琪]
+ctyunAcctId: "ba69d44a5ea847be85ffe3f486f087db"
+
+# subuserId: 1000004142

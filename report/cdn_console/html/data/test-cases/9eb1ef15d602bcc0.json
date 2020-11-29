@@ -1,0 +1,107 @@
+{
+  "uid" : "9eb1ef15d602bcc0",
+  "name" : "test_CDN_243756",
+  "fullName" : "testcases.cdn.bs_console.test_bs_overview.Test_BS_Overview#test_CDN_243756",
+  "historyId" : "4c6b219fe8f7f4dbe79192a30ef5b401",
+  "time" : {
+    "start" : 1606461289005,
+    "stop" : 1606461289415,
+    "duration" : 410
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461285857,
+      "stop" : 1606461285857,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461289004,
+      "stop" : 1606461289004,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461290382,
+      "stop" : 1606461290382,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "message/ListMessage接口2"
+  }, {
+    "name" : "feature",
+    "value" : "BS 客户控制台概览页接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.bs_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_bs_overview"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_BS_Overview"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.bs_console.test_bs_overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9eb1ef15d602bcc0.json",
+  "parameterValues" : [ ]
+}

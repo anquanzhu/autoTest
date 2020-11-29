@@ -1,0 +1,107 @@
+{
+  "uid" : "d642d0d50158b26f",
+  "name" : "test_CDN_261150",
+  "fullName" : "testcases.cdn.vip_console.test_vip_order.Test_Vip_Order#test_CDN_261150",
+  "historyId" : "2c2c497787404ce880e48fc18caac8cc",
+  "time" : {
+    "start" : 1606461601529,
+    "stop" : 1606461603737,
+    "duration" : 2208
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461601528,
+      "stop" : 1606461601528,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461595499,
+      "stop" : 1606461596617,
+      "duration" : 1118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461603738,
+      "stop" : 1606461603738,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "VIP客户控制台,工单列表接口测试"
+  }, {
+    "name" : "story",
+    "value" : "域名与工单关联，新增域名，查找新增工单"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.vip_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_vip_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Vip_Order"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.vip_console.test_vip_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d642d0d50158b26f.json",
+  "parameterValues" : [ ]
+}

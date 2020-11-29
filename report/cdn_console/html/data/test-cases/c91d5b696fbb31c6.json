@@ -1,0 +1,107 @@
+{
+  "uid" : "c91d5b696fbb31c6",
+  "name" : "test_CDN_261178",
+  "fullName" : "testcases.cdn.bs_console.test_bs_order.Test_Bs_Order#test_CDN_261178",
+  "historyId" : "05e8a21d74a22de5f19711074ff8de14",
+  "time" : {
+    "start" : 1606461283423,
+    "stop" : 1606461284319,
+    "duration" : 896
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461283423,
+      "stop" : 1606461283423,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461279195,
+      "stop" : 1606461280029,
+      "duration" : 834
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461285856,
+      "stop" : 1606461285856,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "域名与工单关联，已停用状态域名-查找停用工单"
+  }, {
+    "name" : "feature",
+    "value" : "BS客户控制台,工单列表接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.bs_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_bs_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Bs_Order"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.bs_console.test_bs_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c91d5b696fbb31c6.json",
+  "parameterValues" : [ ]
+}

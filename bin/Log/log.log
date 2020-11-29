@@ -1,0 +1,47 @@
+[DEBUG 2020-07-11 11:51:26]cookies: {'iam_tgc': '3714e45b-23c1-4f53-ab13-1d8306ac2175'}
+[DEBUG 2020-07-11 11:57:52]cookies: {'iam_tgc': 'c5c2d6c2-6016-40d1-8f61-8f8df298f826'}
+[DEBUG 2020-07-11 12:04:34]cookies: {'iam_tgc': 'ecb778b6-2a4a-427e-aec4-1606a1894c37'}
+[DEBUG 2020-07-11 12:06:42]cookies: {'iam_tgc': '63bcf14e-5dea-4187-80f2-fdc59eeae32a'}
+[DEBUG 2020-07-12 16:15:41]cookies: {'iam_tgc': 'efaa5606-2619-4a84-aa21-a3f0a90bd60b'}
+[DEBUG 2020-07-12 16:46:37]cookies: {'iam_tgc': '876ea68e-8899-4bda-a383-fb852ad15e11'}
+[DEBUG 2020-07-12 16:47:24]cookies: {'iam_tgc': 'dd2106aa-e3e1-4858-9749-98973bc2f4f3'}
+[DEBUG 2020-07-12 16:57:29]cookies: {'iam_tgc': '4452dd56-dd3d-4a87-b208-f6f833d49dff'}
+[DEBUG 2020-07-12 17:01:24]cookies: {'iam_tgc': '351ec966-b457-400f-b5d2-b998de007cc3'}
+[DEBUG 2020-07-13 10:52:03]cookies: {'iam_tgc': 'c6c29f6f-f59f-4c6b-9c43-365e976f15f9'}
+[DEBUG 2020-07-13 10:54:54]cookies: {'iam_tgc': 'af5e7a2f-ac67-4da9-9165-4db610a92844'}
+[DEBUG 2020-07-13 10:55:33]cookies: {'iam_tgc': '68681802-6965-489f-931d-12a4efb43557'}
+[DEBUG 2020-07-13 10:56:55]cookies: {'iam_tgc': '54472351-8ab9-45b6-a6fc-495cf7dc158b'}
+[DEBUG 2020-07-13 10:59:15]cookies: {'iam_tgc': 'cc27857b-525e-481f-9f63-11299a44c8b3'}
+[DEBUG 2020-07-13 10:59:55]cookies: {'iam_tgc': '8b8b43f3-d83c-4747-be49-7adedcbc80c5'}
+[WARNING 2020-07-16 14:50:19]This is warning message
+[ERROR 2020-07-16 14:50:19]This is error
+[CRITICAL 2020-07-16 14:50:19]This is critical message
+[INFO 2020-07-16 14:52:11]This is info message
+[INFO 2020-07-17 10:40:39]please check your suite name: 
+[INFO 2020-07-17 10:40:39]please check your suite name: 
+[INFO 2020-07-17 10:40:39]please check your suite name: 
+[INFO 2020-07-17 10:40:39]please check your suite name: 
+[INFO 2020-07-17 10:43:16]please check your suite name 
+[INFO 2020-07-17 10:55:49]please check your suite name 
+[INFO 2020-07-20 17:00:29]Exception url: https://iam-test.ctcdn.cnhttps://iam-test.ctcdn.cn/cdn/gw/cert/CreateCert
+[ERROR 2020-07-20 17:05:47]Response body Does not contain expected_msg, expected_msg is 解析证书失败，证书格式不正确
+[ERROR 2020-07-20 17:08:10]Response body Does not contain expected_msg, expected_msg is 解析证书失败，证书格式不正确
+[ERROR 2020-07-20 17:08:51]Response body Does not contain expected_msg, expected_msg is 解析证书失败，证书格式不正确
+[ERROR 2020-07-20 18:20:35]Response body Does not contain expected_msg, expected_msg is 解析证书失败，证书格式不正确
+[ERROR 2020-07-20 18:23:33]Response body Does not contain expected_msg, expected_msg is 解析证书失败，证书格式不正确
+[ERROR 2020-07-20 18:25:14]Response body Does not contain expected_msg, expected_msg is 中文
+[ERROR 2020-07-20 18:25:24]Response body Does not contain expected_msg, expected_msg is DDDDD
+[ERROR 2020-07-20 18:28:29]Response body Does not contain expected_msg, expected_msg is DDDDD
+[ERROR 2020-07-21 08:55:07]Response body Does not contain expected_msg, expected_msg is DDDDD
+[ERROR 2020-07-21 09:01:37]Response body Does not contain expected_msg, expected_msg is DDDDD
+[ERROR 2020-07-21 09:31:04]Response body Does not contain expected_msg, expected_msg is 解析证书失败，证书格式不正确
+[ERROR 2020-07-21 09:37:44]Response body Does not contain expected_msg, expected_msg is 证书
+[ERROR 2020-08-26 15:28:05]statusCode error, expected_code is 200, statusCode is 200 
+[ERROR 2020-09-01 09:31:18]common_assert failed!
+[ERROR 2020-09-01 11:54:21]common_assert failed!
+[ERROR 2020-09-01 11:56:32]common_assert failed!
+[ERROR 2020-09-01 11:59:26]common_assert failed!
+[ERROR 2020-09-01 15:31:01]common_assert failed!
+[ERROR 2020-09-01 15:32:48]common_assert failed!
+[ERROR 2020-09-01 15:34:52]common_assert failed!
+[ERROR 2020-09-01 15:44:34]common_assert failed!

@@ -1,0 +1,107 @@
+{
+  "uid" : "8ca109fea34d9b9b",
+  "name" : "test_CDN_240872",
+  "fullName" : "testcases.cdn.vip_console.test_vip_refresh.Test_Vip_Refresh#test_CDN_240872",
+  "historyId" : "94d222aba989c5aefa5f350461b0e3ae",
+  "time" : {
+    "start" : 1606461624290,
+    "stop" : 1606461627929,
+    "duration" : 3639
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461607878,
+      "stop" : 1606461608934,
+      "duration" : 1056
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461624289,
+      "stop" : 1606461624289,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461628304,
+      "stop" : 1606461628305,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "VIP客户控制台刷新预取页接口测试"
+  }, {
+    "name" : "story",
+    "value" : "CreateRefreshTask,刷新大量目录 "
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.vip_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_vip_refresh"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Vip_Refresh"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.vip_console.test_vip_refresh"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ca109fea34d9b9b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,79 @@
+{
+  "uid" : "806c1de396919b5b",
+  "name" : "test_CDN_123456",
+  "fullName" : "testcases.cdn.ctyun_console.test_ctyun_domain.TestDomain#test_CDN_123456",
+  "historyId" : "d402bfdd9a19c5656b689caf201d3973",
+  "time" : {
+    "start" : 1606461308472,
+    "stop" : 1606461308472,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 调试",
+  "statusTrace" : "('testcases\\\\cdn\\\\ctyun_console\\\\test_ctyun_domain.py', 188, 'Skipped: 调试')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461312370,
+      "stop" : 1606461312370,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "CDN客户控制台域名测试，只是新增"
+  }, {
+    "name" : "feature",
+    "value" : "CTYUN客户控制台-域名管理模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.ctyun_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_ctyun_domain"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDomain"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.ctyun_console.test_ctyun_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "806c1de396919b5b.json",
+  "parameterValues" : [ ]
+}

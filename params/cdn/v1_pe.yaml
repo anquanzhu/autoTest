@@ -1,0 +1,26 @@
+# http接口测试框架配置信息
+
+
+# [v1-pe]
+
+host: https://console.ctcdn.cn
+
+# AK/SK 来自osp 对应服务 ---decode（time） ----decode （URL）----
+APP: "262041364663894016"
+APP_SECRET: "03McvYqCS9qhKjNgNm53Uq1ZgoiywGGr7WA45OCDpNU"
+AC: "app"
+
+# 天翼云账号，来自iam_user-[周琪]
+ctyunAcctId: "0dba69812ab444c4adc90edbf080b210"
+
+email: 1524926244@qq.com
+
+workspaceid: "10002005"
+subuserId: 1000000487
+
+
+# 域名
+domain: ["*.baidu.com"]
+
+# 证书
+cert: "周琪"

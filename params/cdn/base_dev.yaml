@@ -1,0 +1,98 @@
+# http接口测试框架配置信息
+
+
+
+
+#[test]
+# 测试报告路径
+xml_report: "/report/xml"
+html_report: "/report/html"
+# 测试计划id
+planId: 239741
+# dev环境
+tester: chenmq
+environment: dev
+versionCode: v1.0
+host: https://iam-dev.ctcdn.cn
+sessionHost: https://iam-dev.ctcdn.cn/iam/sign/ok
+#cdn-test-new.ctyun.cn
+loginHost: https://iam-dev.ctcdn.cn/iam/gw/auth/Login
+workspaceid: "10001483"
+workOrderHost: http://work-order-test.ctyuncdn.cn
+workOrderAuthHost: http://work-order-test.ctyuncdn.cn/v1/auth/getUserInfo
+iamPrivateHost: https://iam-private-test.ctcdn.cn/iam/gw/auth/Login
+vipAuthHost: https://iam-dev.ctcdn.cn/iam/ctyun/console?workspaceId=10003885&serviceId=10000010&returnUrl=%2Fcdn%2Fctyun%2Fself&signature=bbffe2f99999833d41cd224af3332427
+# 登录信息
+loginInfo: {
+  "id": "cmq00002@qq.com",
+  "loginFree": "false",
+  "loginType": "password",
+  "password": "PapmaPSLQbUKWu2XWIIVHw=="
+}
+cnname: 'cmq00002'
+bsAuthHost: https://iam-private-test.ctcdn.cn/iam/ctyun/console?workspaceId=10001582&serviceId=10001504&returnUrl=http%3A%2F%2Fbs-test.ctyuncdn.cn%2F&signature=53698f7d5506fe3211900e3cbad1f683
+# iam-private 登录信息
+iam_loginInfo: {
+  "id": "chenmq",
+  "loginFree": "false",
+  "loginType": "password",
+  "origin": "freeipa",
+  "password": "Sn3qRqwMZwPdtZA0PWJlNw=="
+}
+# 集成环境数据库
+db_info: {
+  host: "36.111.140.79",
+  user: "root",
+  password: "SJKsjk@111111",
+  port: 3306,
+  db: 'cmdb',
+  charset: 'utf8'
+}
+email: 286036139@qq.com
+
+headers_json: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                                  Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/json",
+}
+headers_text: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                                  Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "text/plain",
+}
+headers_form: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                      Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/x-www-form-urlencoded",
+}
+
+header_form_wo: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                          Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/x-www-form-urlencoded",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEzfQ.zWkVj5oehTUt9l0_O3i_o1i4wtoo7Aj21j0HWVD95bs"
+}
+
+header_json_wo: {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                          Chrome/67.0.3396.99 Safari/537.36",
+  "Content-Type": "application/json",
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEzfQ.zWkVj5oehTUt9l0_O3i_o1i4wtoo7Aj21j0HWVD95bs"
+}
+
+# V1 接口的一些基本信息
+
+# AK/SK 来自osp 对应服务 ---decode（time） ----decode （URL）----
+APP: "262041364663894016"
+APP_SECRET: "03McvYqCS9qhKjNgNm53Uq1ZgoiywGGr7WA45OCDpNU"
+
+AC: "app"
+# 天翼云账号，来自iam_user
+ctyunAcctId: "ba69d44a5ea847be85ffe3f486f087db"
+
+
+## 无CDN产品的用户
+
+no_account_id: 1848286bff514ecb99621c69ce0de56f
+
+

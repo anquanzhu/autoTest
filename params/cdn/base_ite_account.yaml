@@ -1,0 +1,53 @@
+# 集成测试环境账号信息
+
+
+### VIP 账号
+workspaceid: "10003885"
+# 登录信息
+loginInfo: {
+  "id": "cmq00002@qq.com",
+  "loginFree": "false",
+  "loginType": "password",
+  "password": "PapmaPSLQbUKWu2XWIIVHw=="
+}
+cnname: 'cmq00002'
+email: 286036139@qq.com
+
+
+# 工单系统，iam-private 登录信息
+iam_loginInfo: {
+  "id": "chenmq",
+  "loginFree": "false",
+  "loginType": "password",
+  "origin": "freeipa",
+  "password": "Sn3qRqwMZwPdtZA0PWJlNw=="
+}
+
+
+
+### CTYUN 账号
+ctyun_workspaceid: "10039265"
+# 周琪的账号
+ctyun_loginInfo: id=1524926244@qq.com&loginType=password&password=EeltA2Qo%2F4Cd3kTN8oAnPA%3D%3D&loginFree=false
+
+
+
+bsUserName: "陈孟琪"
+
+
+
+# V1 接口的一些基本信息
+
+# AK/SK 来自osp 对应服务 ---decode（time） ----decode （URL）----
+APP: "262041364663894016"
+APP_SECRET: "03McvYqCS9qhKjNgNm53Uq1ZgoiywGGr7WA45OCDpNU"
+
+AC: "app"
+# 天翼云账号，来自iam_user
+#ctyunAcctId: "2364d5f2c3f541e8925de5c866341c7a"
+ctyunAcctId: "ba69d44a5ea847be85ffe3f486f087db"
+#
+subuserId: 1000004142
+## 无CDN产品的用户
+
+no_account_id: 1848286bff514ecb99621c69ce0de56f

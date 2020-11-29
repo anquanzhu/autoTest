@@ -1,0 +1,12 @@
+
+# 创建证书 {"data":{"workspaceId":"10003885","name":"1","certs":"2","key":"3","email":"286036139@qq.com"}}
+  createCert: /cdn/gw/cert/CreateCert
+
+  # 查看证书 get workspaceId=10003885&name=cmq15
+  viewCert: /cdn/gw/cert/ListDomainByCert
+
+  # 查看工作区所有证书  workspaceId=10003885&page=1&perPage=10
+  listCert: /cdn/gw/cert/CertList
+
+  # 删除证书 workspaceId=10003885&name=cmq001
+  delCert: /cdn/gw/cert/DeleteCert

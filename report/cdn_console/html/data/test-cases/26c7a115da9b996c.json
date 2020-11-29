@@ -1,0 +1,107 @@
+{
+  "uid" : "26c7a115da9b996c",
+  "name" : "test_CDN_243740",
+  "fullName" : "testcases.cdn.bs_console.test_bs_refresh.Test_Bs_Refresh#test_CDN_243740",
+  "historyId" : "20d4788e5b349bc858fdc5d7994834ad",
+  "time" : {
+    "start" : 1606461301774,
+    "stop" : 1606461301935,
+    "duration" : 161
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461301774,
+      "stop" : 1606461301774,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461290385,
+      "stop" : 1606461291735,
+      "duration" : 1350
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461304896,
+      "stop" : 1606461304896,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "BS 客户控制台刷新预取页接口测试"
+  }, {
+    "name" : "story",
+    "value" : "CreateRefreshTask 刷没有操作权限的URL"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.bs_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_bs_refresh"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Bs_Refresh"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.bs_console.test_bs_refresh"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "26c7a115da9b996c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,109 @@
+{
+  "uid" : "4c98832b16a866b7",
+  "name" : "test_CDN_260850",
+  "fullName" : "testcases.cdn.bs_console.test_bs_cert.Test_BS_cert#test_CDN_260850",
+  "historyId" : "a7a042f37a2b33e3b53960ffb7010141",
+  "time" : {
+    "start" : 1606461198621,
+    "stop" : 1606461199007,
+    "duration" : 386
+  },
+  "description" : "\n        核对证书管理页面证书数量与概览页证书数量一致，关联到2个CertList接口，url一样，请求方式及请求数据不同\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    核对证书管理页面证书数量与概览页证书数量一致，关联到2个CertList接口，url一样，请求方式及请求数据不同\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461198621,
+      "stop" : 1606461198621,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461192876,
+      "stop" : 1606461193237,
+      "duration" : 361
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461199008,
+      "stop" : 1606461199008,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "BS 客户控制台-证书模块"
+  }, {
+    "name" : "story",
+    "value" : "证书数量校对"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.bs_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_bs_cert"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_BS_cert"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.bs_console.test_bs_cert"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c98832b16a866b7.json",
+  "parameterValues" : [ ]
+}

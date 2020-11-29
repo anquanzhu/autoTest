@@ -1,0 +1,105 @@
+{
+  "uid" : "7bec5568b15a16ae",
+  "name" : "test_CDN_243725",
+  "fullName" : "testcases.cdn.bs_console.test_bs_billing.Test_BS_Billing#test_CDN_243725",
+  "historyId" : "bf7f0f84bc4ecedf420bfa4b86306752",
+  "time" : {
+    "start" : 1606438388721,
+    "stop" : 1606438388852,
+    "duration" : 131
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606438385881,
+      "stop" : 1606438385881,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606438388720,
+      "stop" : 1606438388720,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606438389513,
+      "stop" : 1606438389514,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "BS 客户控制台 计费详情页接口测试"
+  }, {
+    "name" : "story",
+    "value" : "flowpacket/ListV3 接口1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.bs_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_bs_billing"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_BS_Billing"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-JGH8LCE"
+  }, {
+    "name" : "thread",
+    "value" : "30916-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.bs_console.test_bs_billing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7bec5568b15a16ae.json",
+  "parameterValues" : [ ]
+}

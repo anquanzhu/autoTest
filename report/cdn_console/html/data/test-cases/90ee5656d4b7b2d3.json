@@ -1,0 +1,107 @@
+{
+  "uid" : "90ee5656d4b7b2d3",
+  "name" : "test_CDN_249287",
+  "fullName" : "testcases.cdn.vip_console.test_vip_log_top.Test_Vip_Top#test_CDN_249287",
+  "historyId" : "249e1e77d4cfa8be4b34e05a896af288",
+  "time" : {
+    "start" : 1606461580598,
+    "stop" : 1606461580885,
+    "duration" : 287
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461546279,
+      "stop" : 1606461562819,
+      "duration" : 16540
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461580597,
+      "stop" : 1606461580597,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461581777,
+      "stop" : 1606461581779,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "查询7天的域名排行"
+  }, {
+    "name" : "feature",
+    "value" : "VIP客户控制台,统计分析-热门分析接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.vip_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_vip_log_top"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Vip_Top"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.vip_console.test_vip_log_top"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "90ee5656d4b7b2d3.json",
+  "parameterValues" : [ ]
+}

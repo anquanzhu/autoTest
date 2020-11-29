@@ -1,0 +1,114 @@
+{
+  "total" : 31,
+  "items" : [ {
+    "uid" : "8506d93c2e9ecd17f2cd6e0ed9002708",
+    "name" : "VIP客户控制台刷新预取页接口测试",
+    "statistic" : {
+      "failed" : 9,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "90c4e244da25f41ec8691cdde7c38d41",
+    "name" : "BS 客户控制台刷新预取页接口测试",
+    "statistic" : {
+      "failed" : 8,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "68bdf6ff7f5c7f5e0b47b676d251534a",
+    "name" : "CTYUN 客户控制台概览页接口测试",
+    "statistic" : {
+      "failed" : 8,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "7a90170a7b389c0bc20b6964530f58dc",
+    "name" : "CTYUN客户控制台计费详情模块",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "5ed35667ecaf14694f003285a6f7bd8f",
+    "name" : "CTYUN 客户控制台-证书模块",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "ef51af80676e2a01e3fd54d9193f9e54",
+    "name" : "客户控制台v1接口域名接口测试",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "1955b978d72140c01efe87a9955d9eb5",
+    "name" : "VIP客户控制台诊断工具页接口测试",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "c4288a7b6a6a4ca4e3a738cbe141092d",
+    "name" : "BS 客户控制台诊断工具页接口测试",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "a704eea24f6f11ec36457776c717b629",
+    "name" : "CTYUN客户控制台,统计分析-热门分析接口测试",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 42,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 42
+    }
+  }, {
+    "uid" : "106abb6b200ba270d2e5800aa551f336",
+    "name" : "CTYUN 客户控制台刷新预取页接口测试",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 13,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 13
+    }
+  } ]
+}

@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "VIP客户控制台、CTYUN客户控制台、BS客户控制台、客户控制台对外V1接口" ],
+  "name" : "Test_Range"
+}, {
+  "values" : [ "接口自动化" ],
+  "name" : "Test_Type"
+}, {
+  "values" : [ "集成测试环境" ],
+  "name" : "ENV"
+} ]

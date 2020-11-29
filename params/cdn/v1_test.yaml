@@ -1,0 +1,31 @@
+# http接口测试框架配置信息
+
+
+# [v1-test]
+
+host: https://iam-test.ctcdn.cn
+
+# AK/SK 来自osp 对应服务 ---decode（time） ----decode （URL）----
+APP: "262041364663894016"
+APP_SECRET: "03McvYqCS9qhKjNgNm53Uq1ZgoiywGGr7WA45OCDpNU"
+AC: "app"
+
+# 天翼云账号，来自iam_user-[蔡君]
+ctyunAcctId: "2ce3b241120a4e998a9ae1c53ec4df64"
+
+email: 286036139@qq.com
+
+workspaceid: "10009822"
+
+subuserId: 1000004220
+
+
+# 域名 [test_v1_domain]
+domain: ["log1.zhihu.com"]
+
+# 证书 [test_v1_cert]
+cert: zhihu泛域名
+
+
+# 自助工单，用户账号ctyunid (791011130@qq.com)
+autoCtyun: 9599cdff60d24ea4a9f4cc915f088416

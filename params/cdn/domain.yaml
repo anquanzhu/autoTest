@@ -1,0 +1,51 @@
+# 验证域名是否有效 workspaceId=10003885&domain=Auto-random-D7ddf.ctyun.cn&_t=1598842717779
+verifyDomain: /cdn/gw/domain/VerifyDomain
+
+# 通过证书备注名，查询证书并获取公私钥 ?workspaceId=10003885&secretName=CTYUN_TEST&_t=1598842670902
+getCert: /cdn/gw/cert/GetCert
+
+
+# 创建域名 ,创建之前必须验证域名是否有效（也就是备案，调用verifyDomain）
+createDomain: /cdn/gw/domain/CreateDomain
+
+# 登录工单
+loginWork: https://iam-private-test.ctcdn.cn/iam/gw/auth/Login
+
+# 获取order_id
+getOrder_id: /v1/workorder/searchWorkOrder
+
+# 获取工单信息
+getOrder_info: /v1/workorder/searchWorkOrderAttr
+
+# 处理工单
+dealOrder: /v1/workorder/dealWorkOrderFront
+
+# 更改域名状态 ?workspaceId=10003885&domain=Auto-random-D7ddf.ctyun.cn&status=2&domainStatus=4&businessType=001&_t=1598843036857
+changeDomain: /cdn/gw/domain/ChangeDomainStatus
+
+# 查询域名list ?workspaceId=10003885&page=1&page_size=10000&_t=1598843063981
+listDomain: /cdn/gw/domain/ListV1
+
+# 查询域名详细 workspaceId=10003885&domain=Auto-random-a3Ab.ctyun.cn
+detailDomain: /cdn/gw/domain/GetV1
+
+
+# 业务平台选择承载平台  {"id":"15988773094110","check_status":3,"partner":["001"]}  {"msg": "Success", "code": 0}
+# 业务平台自动结单 {"id":"15989327674910","status":4,"check_status":3,"reason":"自动结单"}
+bs_updata: http://bs-test.ctyuncdn.cn/api/v1/ticket/domain/update
+
+# 业务平台通过域名查询工单内部id  check_status=2&status=&action=&page_size=20&page=1&domain=Auto-random-4b6d.
+# data--items--id
+bs_checkid: http://bs-test.ctyuncdn.cn/api/v1/ticket/domain/list
+
+# 获取工单列表   {"data":{"workspaceId":"10003885","page":1,"page_size":10,"pageSize":10,"domainList":["a1.baidu.com","cmq002.ksedu.cn"],"orderType":"","status":"","startTime":"","endTime":""}}
+listOrder: /cdn/gw/domain/ListOrder
+
+# 获取域名列表 ?workspaceId=10003885&do=c_order&from=order
+listDomainV2: /cdn/gw/domain/GetList
+
+# 域名检测
+checkDomain: /cdn/gw/domain/Check
+
+# 工单详情
+orderDetail: /cdn/gw/domain/OrderDetail

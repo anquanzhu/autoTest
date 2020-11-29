@@ -1,0 +1,80 @@
+# 天翼云ID
+ctyunAcctId1: ba69d44a5ea847be85ffe3f486f087db
+
+# 天翼云ID, 没登录过IAM
+#ctyunAcctId: "2364d5f2c3f541e8925de5c866341c7a"
+
+# 用户id， iam.iam_user
+user_id: 10021043
+
+# email
+email: 286036139@qq.com
+
+# 创建证书
+createCert: /cdn/gw/v1/cert/Create
+
+# 删除证书
+deleteCert: /cdn/gw/v1/cert/Delete
+
+# 查询域名
+listdomainbyCert: /cdn/gw/v1/cert/ListDomainByCert
+
+# 查询证书
+getCert: /cdn/gw/v1/cert/Get
+
+# 证书列表
+certList: /cdn/gw/v1/cert/List
+
+# 产品列表
+productList: /cdn/gw/v1/ProductList
+
+# 区域列表
+areaList: /cdn/gw/v1/AreaList
+
+# 运营商列表
+ispList: /cdn/gw/v1/IspList
+
+# 日志查询
+logFile: /cdn/gw/v1/logfiles/Query
+
+# 子用户域名列表
+listbySubuser: /cdn/gw/v1/domain/ListBySubuser
+
+# 工作区子用户列表
+getSubusers: /cdn/gw/v1/domain/GetSubusers
+
+# 创建域名
+createDomain: /cdn/gw/v1/domain/Create
+
+# 修改域名状态
+changeDomain: /cdn/gw/v1/domain/ChangeDomainStatus
+
+# 域名复制
+copyDomain: /cdn/gw/v1/domain/Copy
+
+# 查询域名
+getDomain: /cdn/gw/v1/domain/Get
+
+# 域名列表
+listDomain: /cdn/gw/v1/domain/List
+
+# 源站查询域名信息
+querybyOrigins: /cdn/gw/v1/domain/QueryByOrigins
+
+# 带宽流量
+querybandwidthandTraffic: /cdn/gw/v1/statistics/QueryBandwidthAndTraffic
+
+# 请求数
+requestdataList: /cdn/gw/v1/statistics/RequestDataList
+
+# 命中数
+hitDate: /cdn/gw/v1/statistics/HitDate
+
+# 状态码总数
+httpCodeSummary: /cdn/gw/v1/statistics/HttpCodeSummary
+
+# 回源数据
+missData: /cdn/gw/v1/statistics/MissData
+
+# 状态码
+httpCode: /cdn/gw/v1/statistics/HttpCode

@@ -1,0 +1,33 @@
+# ctyun 一些特殊的接口（非公共的部分）
+
+loginUrl: https://www.ctyun.cn/services/auth/Login?locale=zh-cn
+
+login1: https://www.ctyun.cn/cas/login?keyId=152999073894506063&appId=152999073894506063&timestamp=1601018747349&signature=utBw8mlSaOfauS5jLnh2yecYaXyQVnCppCaVUDohPc4&service=https%3A%2F%2Fcdn-test-new.ctyun.cn%3A443%2Fcasclient%2Fcas%2Fdefault%2Fb69bedd7-d6ba-4000-87e0-c29f685ec821
+
+validate_ticket: https://www.ctyun.cn/cas/validate?ticket=4f1b1bd4-7a67-40de-87d2-e38e5ed3b68e&service=https%3A%2F%2Fcdn-test-new.ctyun.cn%3A443%2Fcasclient%2Fcas%2Fdefault%2Fb69bedd7-d6ba-4000-87e0-c29f685ec821&timestamp=1601018773278&keyId=152999073894506063&appId=152999073894506063&signature=4qdYU_aQCPJNiiLOlp8yBvnVgWbhix2GDI4r6TCZ-Wc
+
+authUrl1: https://www.ctyun.cn/sso/tourl
+
+authUrl2: https://cdn-test-new.ctyun.cn/gw/auth/Current?locale=zh-cn
+
+authUrl3: https://cdn-test-new.ctyun.cn/cdn/ctyun/current
+
+getEnv: /cdn/gw/env/System
+
+menu_ctyun: https://cdn-test-new.ctyun.cn/cdn/ctyun/menu?workspaceId=10039265&domain=cdn.main
+
+menu_ctyun_tree: https://cdn-test-new.ctyun.cn/gw/v1/portal/menu/GetTree?workspaceId=10039265&domain=console.dropdown
+#https://cdn-test-new.ctyun.cn/gw/v1/portal/menu/GetTree?domain=console.topbar&locale=zh-cn
+# /gw/v1/portal/menu/GetTree?domain=home.topbar&locale=zh-cn
+
+getTopic: https://cdn-test-new.ctyun.cn/gw/v1/portal/banner/GetTopic?topicId=sidebar&locale=zh-cn
+
+#catalogList: /gw/v1/portal/product/catalog/List2?enablePC=true&locale=zh-cn
+
+console_list: /gw/product/console/List?locale=zh-cn
+
+console_listAll: /gw/product/console/ListAll?locale=zh-cn
+
+checkConsole: /gw/user/CheckConsole?locale=zh-cn
+
+queryUnreadYun: /gw/msg/QueryUnreadYun?locale=zh-cn

@@ -1,0 +1,109 @@
+{
+  "uid" : "ebb03694e9d608eb",
+  "name" : "test_CDN_259933",
+  "fullName" : "testcases.cdn.bs_console.test_bs_overview.Test_BS_Overview#test_CDN_259933",
+  "historyId" : "c153ce1d706b3387a9f18eea82c9876b",
+  "time" : {
+    "start" : 1606461289418,
+    "stop" : 1606461290378,
+    "duration" : 960
+  },
+  "description" : "\n        1. 校对c_data ,c_domain下的域名数量 （domain代表用户可访问的域名数量，data代表用户进行统计分析操作的域名数量）\n        2. 校对域名管理页面的域名数量等同于1里面统计的域名数量\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    1. 校对c_data ,c_domain下的域名数量 （domain代表用户可访问的域名数量，data代表用户进行统计分析操作的域名数量）\n    2. 校对域名管理页面的域名数量等同于1里面统计的域名数量\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461285857,
+      "stop" : 1606461285857,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461289417,
+      "stop" : 1606461289417,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461290382,
+      "stop" : 1606461290382,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "域名列表接口的关联与核对"
+  }, {
+    "name" : "feature",
+    "value" : "BS 客户控制台概览页接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.bs_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_bs_overview"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_BS_Overview"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.bs_console.test_bs_overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ebb03694e9d608eb.json",
+  "parameterValues" : [ ]
+}

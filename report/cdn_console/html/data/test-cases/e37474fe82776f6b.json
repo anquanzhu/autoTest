@@ -1,0 +1,100 @@
+{
+  "uid" : "e37474fe82776f6b",
+  "name" : "test_CDN_251646",
+  "fullName" : "testcases.cdn.ctyun_console.test_ctyun_log_top.Test_Ctyun_Top#test_CDN_251646",
+  "historyId" : "a66ae14ca78452ef67dae71029491b43",
+  "time" : {
+    "start" : 1606461311473,
+    "stop" : 1606461311473,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'data'",
+  "statusTrace" : "self = <class 'ctyun_console.test_ctyun_log_top.Test_Ctyun_Top'>\n\n    def setup_class(self):\n        # print('test start')\n        self.session = Init.CTYUN_SESSION\n        self.base_info = Init.BASE_INFO\n        self.log_info = Init.LOG_INFO\n        self.console_host = self.base_info['ctyunHost']\n        self.workspaceId = self.base_info['ctyun_workspaceid']\n        self.log = CreateLogData()\n>       self.get_domain_list = self.log.get_ctyun_domain_list(self.console_host, self.workspaceId)\n\ntestcases\\cdn\\ctyun_console\\test_ctyun_log_top.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <bin.createLogData.CreateLogData object at 0x000002423A323AC8>\nhost = 'https://cdn-test-new.ctyun.cn', workspaceid = '10039265'\n\n    def get_ctyun_domain_list(self, host, workspaceid):\n        \"\"\"\n        由于可能使用不同控制台，不用用户的情况，那么Host， workspaceid不宜写死。\n        :param host:\n        :param workspaceid:\n        :return:\n        \"\"\"\n        list_domain = host + self.domain_info['listDomain']\n        list_data = 'workspaceId=' + workspaceid + '&page=1&page_size=10000'\n        list_response = self.ctyun_session.get(url=list_domain, params=list_data,\n                                               headers=self.base_info['headers_form'],\n                                               verify=False, timeout=10)\n        print(list_response.text)\n        body = json.loads(list_response.text)\n        domain_list = []\n        print(\"body:\", body)\n>       temp = body['data']['list']\nE       KeyError: 'data'\n\nbin\\createLogData.py:136: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461310677,
+      "stop" : 1606461310726,
+      "duration" : 49
+    },
+    "status" : "broken",
+    "statusMessage" : "KeyError: 'data'\n",
+    "statusTrace" : "  File \"C:\\Users\\q\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\q\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\_pytest\\fixtures.py\", line 964, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"C:\\Users\\q\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\_pytest\\fixtures.py\", line 788, in call_fixture_func\n    res = next(it)\n  File \"C:\\Users\\q\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\_pytest\\python.py\", line 703, in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n  File \"C:\\Users\\q\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\_pytest\\python.py\", line 634, in _call_with_optional_argument\n    func(arg)\n  File \"D:\\autoTest\\testcases\\cdn\\ctyun_console\\test_ctyun_log_top.py\", line 33, in setup_class\n    self.get_domain_list = self.log.get_ctyun_domain_list(self.console_host, self.workspaceId)\n  File \"D:\\autoTest\\bin\\createLogData.py\", line 136, in get_ctyun_domain_list\n    temp = body['data']['list']\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461312370,
+      "stop" : 1606461312370,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "CTYUN客户控制台,统计分析-热门分析接口测试"
+  }, {
+    "name" : "story",
+    "value" : "访问次数维度查询热门URL"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.ctyun_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_ctyun_log_top"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ctyun_Top"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.ctyun_console.test_ctyun_log_top"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e37474fe82776f6b.json",
+  "parameterValues" : [ ]
+}

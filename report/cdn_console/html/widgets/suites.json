@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "1a114f62cb33b883a2344b841bdbbd00",
+    "name" : "testcases.cdn.ctyun_console",
+    "statistic" : {
+      "failed" : 18,
+      "broken" : 141,
+      "skipped" : 7,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 166
+    }
+  }, {
+    "uid" : "a5f72407717e7de6f6935d44d8c513ff",
+    "name" : "testcases.cdn.vip_console",
+    "statistic" : {
+      "failed" : 10,
+      "broken" : 3,
+      "skipped" : 5,
+      "passed" : 155,
+      "unknown" : 0,
+      "total" : 173
+    }
+  }, {
+    "uid" : "d902c20dff97ad953b85a91da0206adf",
+    "name" : "testcases.cdn.bs_console",
+    "statistic" : {
+      "failed" : 10,
+      "broken" : 2,
+      "skipped" : 5,
+      "passed" : 148,
+      "unknown" : 0,
+      "total" : 165
+    }
+  }, {
+    "uid" : "6b902738fde5dca38aaaec07d6f40f55",
+    "name" : "testcases.cdn.v1",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 7,
+      "passed" : 26,
+      "unknown" : 0,
+      "total" : 37
+    }
+  } ]
+}

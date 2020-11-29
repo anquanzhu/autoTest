@@ -1,0 +1,115 @@
+{
+  "uid" : "aa2b49576e24cbf1",
+  "name" : "test_failed_domain",
+  "fullName" : "testcases.cdn.vip_console.test_vip_domain.Test_Vip_Domain#test_failed_domain",
+  "historyId" : "17e9b6351748898d0484adc7525de513",
+  "time" : {
+    "start" : 1606461481603,
+    "stop" : 1606461491432,
+    "duration" : 9829
+  },
+  "description" : "\n        工单状态： 2- 进行中 3- 成功  4- 失败\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    工单状态： 2- 进行中 3- 成功  4- 失败\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'Test_Vip_Domain' object has no attribute 'order'",
+  "statusTrace" : "self = <test_vip_domain.Test_Vip_Domain object at 0x000002423B864BA8>\n\n    @pytest.mark.skipif(Init.ENV == 'PE',\n                        reason=\"线上环境无法执行\")\n    # @pytest.mark.repeat(50)\n    @allure.story('域名从创建---工单系统配置失败---重新发起---配置成功---域名启用')\n    def test_failed_domain(self):\n        \"\"\"\n        工单状态： 2- 进行中 3- 成功  4- 失败\n        :return:\n        \"\"\"\n        console_host = self.base_info['host']\n        workspace_id = self.base_info['workspaceid']\n        random_info = self.createDomain.generate_randomDomain()\n        createDomain_url = console_host + self.domain_info['createDomain']\n        check_domain_url = console_host + self.domain_info['detailDomain']\n        domain = random_info['data']['domain']\n        productcode = random_info['data']['productCode']\n        check_domain_data = 'workspaceId=' + workspace_id + '&domain=' + domain + ''\n    \n        # 创建域名\n        self.session.get(url=self.verifyDomain_url, params=check_domain_data, headers=headers_form, verify=False,\n                         timeout=10)\n        createDomain_response = self.session.post(url=createDomain_url, json=random_info, headers=headers_json,\n                                                  verify=False, timeout=10)\n        print(domain)\n        print(\"-------------------------创建 域名 ----------------------------\")\n        print('请求方式：post' + '请求URL：' + createDomain_url)\n        print(\"请求数据： \" + str(random_info))\n        print(\"接口返回： \" + createDomain_response.text)\n    \n        # 域名列表里面无该域名，工单列表有新增域名工单生成\n        assert domain not in self.domain_list\n        time.sleep(3)\n        # assert domain in self.order_list\n    \n        # 工单系统处理，配置失败\n        deal_new_domain(domain, \"4\")\n    \n        # 去控制台验证\n        assert domain not in self.domain_list  # 配置失败的域名不会出现在域名列表\n        order_url = self.domain_info[\"orderDetail\"]\n>       order_id = self.order.get_OrderId(domain)\nE       AttributeError: 'Test_Vip_Domain' object has no attribute 'order'\n\ntestcases\\cdn\\vip_console\\test_vip_domain.py:195: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461481602,
+      "stop" : 1606461481602,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461425229,
+      "stop" : 1606461426392,
+      "duration" : 1163
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461495559,
+      "stop" : 1606461495560,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "域名流程测试"
+  }, {
+    "name" : "story",
+    "value" : "域名从创建---工单系统配置失败---重新发起---配置成功---域名启用"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.vip_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_vip_domain"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Vip_Domain"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.vip_console.test_vip_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "aa2b49576e24cbf1.json",
+  "parameterValues" : [ ]
+}

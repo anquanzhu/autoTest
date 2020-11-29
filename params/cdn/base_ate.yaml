@@ -1,0 +1,58 @@
+# http接口测试框架配置信息
+
+
+
+
+#[ATE]
+# 自动化测试服务
+tester: chenmq
+environment: test
+versionCode: v1.0
+host: https://iam-auto.ctcdn.cn
+sessionHost: https://iam-auto.ctcdn.cn/iam/sign/ok
+#cdn-test-new.ctyun.cn
+loginHost: https://iam-auto.ctcdn.cn/iam/gw/auth/Login
+workspaceid: "10003885"
+workOrderHost: http://work-order-test.ctyuncdn.cn
+iamPrivateHost: https://iam-private-test.ctcdn.cn/iam/gw/auth/Login
+vipAuthHost: https://iam-auto.ctcdn.cn/iam/ctyun/console?workspaceId=10003885&serviceId=10000010&returnUrl=%2Fcdn%2Fctyun%2Fself&signature=bbffe2f99999833d41cd224af3332427
+loginInfo: {
+  "id": "cmq00002@qq.com",
+  "loginFree": "false",
+  "loginType": "password",
+  "password": "PapmaPSLQbUKWu2XWIIVHw=="
+}
+bsAuthHost: https://iam-private-test.ctcdn.cn/iam/ctyun/console?workspaceId=10001582&serviceId=10001504&returnUrl=http%3A%2F%2Fbs-test.ctyuncdn.cn%2F&signature=53698f7d5506fe3211900e3cbad1f683
+# iam-private
+iam_loginInfo: {
+  "id": "chenmq",
+  "loginFree": "false",
+  "loginType": "password",
+  "origin": "freeipa",
+  "password": "Sn3qRqwMZwPdtZA0PWJlNw=="
+}
+
+db_info: {
+  host: "36.111.140.79",
+  user: "root",
+  password: "SJKsjk@111111",
+  port: 3306,
+  db: 'cmdb',
+  charset: 'utf8'
+}
+email: 286036139@qq.com
+
+#[product]
+# product正式服务
+tester_product: chenmq
+environment_product: online
+versionCode_product: v1.0
+host_product: https://console.ctcdn.cn
+sessionHost_product: https://cdn-console.ctcdn.cn
+loginHost_product: https://vip.ctcdn.cn/iam/gw/auth/Login
+id_product: cmq00002@qq.com
+loginType_product: password
+password_product: PapmaPSLQbUKWu2XWIIVHw==
+loginFree_product: false
+
+

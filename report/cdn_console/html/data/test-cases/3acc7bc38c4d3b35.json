@@ -1,0 +1,113 @@
+{
+  "uid" : "3acc7bc38c4d3b35",
+  "name" : "test_CDN_246452",
+  "fullName" : "testcases.cdn.ctyun_console.test_ctyun_billing.Test_Ctyun_Billing#test_CDN_246452",
+  "historyId" : "975ec0419d2759c4bf5ffd1224ada25b",
+  "time" : {
+    "start" : 1606461306892,
+    "stop" : 1606461306940,
+    "duration" : 48
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'data'",
+  "statusTrace" : "self = <ctyun_console.test_ctyun_billing.Test_Ctyun_Billing object at 0x000002423A77BCC0>\n\n    @allure.story('/cdn/gw/flowpacket/ChangeV3 接口，修改多次')\n    def test_CDN_246452(self):\n        temp = self.console_host + '/cdn/gw/flowpacket/ProductV3'\n        data = 'workspaceId=' + self.workspace_id\n        payload = {}\n        url = temp + '?' + data\n        response = self.session.request(\"GET\", url, data=payload, verify=False, timeout=10)\n>       resource_temp = json.loads(response.text)['data']['list']\nE       KeyError: 'data'\n\ntestcases\\cdn\\ctyun_console\\test_ctyun_billing.py:190: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1606461306049,
+      "stop" : 1606461306049,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1606461306891,
+      "stop" : 1606461306891,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1606461306947,
+      "stop" : 1606461306948,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "/cdn/gw/flowpacket/ChangeV3 接口，修改多次"
+  }, {
+    "name" : "feature",
+    "value" : "CTYUN客户控制台计费详情模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.cdn.ctyun_console"
+  }, {
+    "name" : "suite",
+    "value" : "test_ctyun_billing"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ctyun_Billing"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-0QCFU979"
+  }, {
+    "name" : "thread",
+    "value" : "8704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.cdn.ctyun_console.test_ctyun_billing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3acc7bc38c4d3b35.json",
+  "parameterValues" : [ ]
+}
